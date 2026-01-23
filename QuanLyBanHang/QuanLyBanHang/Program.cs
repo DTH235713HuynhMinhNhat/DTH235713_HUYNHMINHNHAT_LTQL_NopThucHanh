@@ -1,18 +1,16 @@
-using QuanLyBanHang.form;
+﻿using QuanLyBanHang.Forms; // Thêm dòng này vào đầu tiên
+
 namespace QuanLyBanHang
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmLoaiSanPham());
+            // Đảm bảo tên class là frmLoaiSanPham
+           // Application.Run(new frmLoaiSanPham());
+            Application.Run(new frmHangSanXuat());
         }
     }
 }

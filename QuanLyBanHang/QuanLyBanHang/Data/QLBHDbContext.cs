@@ -19,7 +19,14 @@ namespace QuanLyBanHang.Data
         public DbSet<HoaDon_ChiTiet> HoaDon_ChiTiet { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["QLBHConnection"].ConnectionString);
+            if (!optionsBuilder.IsConfigured)
+            {
+                // Dán trực tiếp chuỗi kết nối của bạn vào đây
+                optionsBuilder.UseSqlServer(
+                    @"Server=LAPTOP-T018HFGU;Database=QLBH;Integrated Security=True;TrustServerCertificate=True",
+                    providerOptions => providerOptions.EnableRetryOnFailure() // Sửa lỗi Transient failure
+                );
+            }
         }
     }
 }
