@@ -143,5 +143,10 @@ namespace QuanLyBanHang.Forms // Đã bỏ dấu ';' dư thừa và khớp với
         {
             this.Close();
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

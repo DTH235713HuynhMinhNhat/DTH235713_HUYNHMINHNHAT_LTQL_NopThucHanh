@@ -111,6 +111,7 @@
             dataGridView.RowHeadersWidth = 51;
             dataGridView.Size = new Size(867, 387);
             dataGridView.TabIndex = 9;
+            dataGridView.CellContentClick += dataGridView_CellContentClick;
             // 
             // ID
             // 

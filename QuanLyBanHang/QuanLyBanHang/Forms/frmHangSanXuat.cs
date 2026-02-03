@@ -45,7 +45,7 @@ namespace QuanLyBanHang.Forms
             bindingSource.DataSource = lsp;
 
             txtTenHangSanXuat.DataBindings.Clear();
-            txtTenHangSanXuat.DataBindings.Add("Text", bindingSource, "TenLoai", false, DataSourceUpdateMode.Never);
+            txtTenHangSanXuat.DataBindings.Add("Text", bindingSource, "TenHangSanXuat", false, DataSourceUpdateMode.Never);
 
             dataGridView.DataSource = bindingSource;
         }
@@ -116,6 +116,11 @@ namespace QuanLyBanHang.Forms
         private void btnHuyBo_Click(object sender, EventArgs e)
         {
             frmHangSanXuat_Load(sender, e);
+
+        }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

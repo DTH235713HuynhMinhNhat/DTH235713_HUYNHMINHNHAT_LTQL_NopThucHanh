@@ -9,8 +9,8 @@ namespace QuanLyBanHang
         {
             ApplicationConfiguration.Initialize();
             // Đảm bảo tên class là frmLoaiSanPham
-           // Application.Run(new frmLoaiSanPham());
-            Application.Run(new frmHangSanXuat());
+            // Application.Run(new frmLoaiSanPham());
+            Application.Run(new frmNhanVien());
         }
     }
 }

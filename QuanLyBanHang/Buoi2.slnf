@@ -1,8 +1,0 @@
-{
-  "solution": {
-    "path": "QuanLyBanHang.sln",
-    "projects": [
-      "QuanLyBanHang\\QuanLyBanHang.csproj"
-    ]
-  }
-}
